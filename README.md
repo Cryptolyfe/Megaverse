@@ -33,28 +33,28 @@ Ensure you have the following before running the project:
 
 ```bash
 git clone https://github.com/Cryptolyfe/Megaverse_Grid_Manager.git
-
+```
 ### Navigate to the project directory:
 
 ```bash
 cd Megaverse_Grid_Manager
-
+```
 ### Install the dependacies
 
 ```bash
 npm install
-
+```
 ## Configuration
 ### Create a .env file in the root directory of the project:
 
 ```bash
 touch .env
-
+```
 ### Add your Candidate ID in the .env file:
 
 ```bash
 CANDIDATE_ID=your-candidate-id-here
-
+```
 ## Usage
 ### The project uses a single script (index.js) to both clear the existing grid and populate it with new entities based on the goal map.
 
@@ -62,7 +62,7 @@ Run the script:
 
 ```bash
 node index.js
-
+```
 ### Expected Output:
 Starting the process to build the goal map.
 Deleted POLYanet at (0, 0)
