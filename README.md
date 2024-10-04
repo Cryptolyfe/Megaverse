@@ -8,7 +8,6 @@
 - [Configuration](#configuration)
 - [Usage](#usage)
 - [Future Improvements](#future-improvements)
-- [Why Node.js?](#why-nodejs)
 - [Repository Structure](#repository-structure)
 
 ## Overview
@@ -24,7 +23,7 @@ Megaverse Grid Manager is a Node.js project that automates interactions with the
 Ensure you have the following before running the project:
 - **Node.js** installed ([Node.js Official Site](https://nodejs.org))
 - **npm** installed (comes with Node.js)
-- **Crossmint API Candidate ID** (needed for API interactions)
+- **Crossmint API Candidate ID**
 
 ## Installation
 
@@ -79,7 +78,7 @@ Process completed successfully.
  Introduces a delay to prevent hitting API rate limits.
  Populates the grid with new entities from the goal map retrieved from the API.
 
-## Future Improvements
+## Future Improvements:
 ### Although the current script works as intended, there are a few areas that can be optimized:
 
 1. Separation of Concerns (Modularization)
