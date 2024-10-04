@@ -75,11 +75,11 @@ Process completed successfully.
 
 
 ## The script does the following:
-### Clears the grid of all existing entities by deleting POLYanets, SOLoons, and comETHs.
-### Introduces a delay to prevent hitting API rate limits.
-### Populates the grid with new entities from the goal map retrieved from the API.
+ Clears the grid of all existing entities by deleting POLYanets, SOLoons, and comETHs.
+ Introduces a delay to prevent hitting API rate limits.
+ Populates the grid with new entities from the goal map retrieved from the API.
 
-##Future Improvements
+## Future Improvements
 ### Although the current script works as intended, there are a few areas that can be optimized:
 
 1. Separation of Concerns (Modularization)
