@@ -63,14 +63,14 @@ Run the script:
 node index.js
 ```
 ### Expected Output:
-Starting the process to build the goal map.
-Deleted POLYanet at (0, 0)
-...
-POLYanet created at (5, 10)
-Attempting to create SOLoon (red) at (6, 12)
-...
-Goal map has been successfully created.
-Process completed successfully.
+    _Starting the process to build the goal map.
+    Deleted POLYanet at (0, 0)
+    ...
+    POLYanet created at (5, 10)
+    Attempting to create SOLoon (red) at (6, 12)
+    ...
+    Goal map has been successfully created.
+    Process completed successfully.
 
 
 ## The script does the following:
