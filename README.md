@@ -88,7 +88,8 @@ create.js: Dedicated to creating the entities.
 Why: Modular scripts will improve maintainability and allow for more flexible testing and troubleshooting.
 2. Optimize the Deletion Process
 Improvement: The script currently tries to delete entities at every grid position, including empty spots marked as "SPACE". We could skip positions that are already "SPACE" to reduce unnecessary API calls.
-3. Optimize the Rate Limiting Delay
+3. Refactor certian entities to Classes: While the current function-based approach works well for this project, refactoring the code to use classes can provide better encapsulation, reusability, and maintainability if the project grows or becomes more complex. By creating separate classes for entities like Polyanet, Soloon, and Cometh, the code could be more organized and modular, allowing for easier modifications or extensions of individual components without affecting others.
+4. Optimize the Rate Limiting Delay
 Improvement: Experiment with shorter delays between API calls (currently set at 500ms for deletions and 1000ms for creations) to find the optimal balance between speed and avoiding rate limits.
-4. Error Handling and Retry Mechanism
+5. Error Handling and Retry Mechanism
 Improvement: Enhance error handling by implementing a retry mechanism when the script encounters rate limits or other transient API errors.
