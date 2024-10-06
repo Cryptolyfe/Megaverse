@@ -16,7 +16,9 @@ Megaverse Grid Manager is a Node.js project that automates interactions with the
 ## Features
 - **Clear Grid**: Removes all existing POLYanets, SOLoons, and comETHs.
 - **Populate Grid**: Fills the grid with entities based on the retrieved goal map.
-- **Rate Limiting Management**: Handles delays to avoid hitting Crossmint API's rate limits.
+- **Optimized Iteration**: Custom logic to intelligently skip "SPACE" entities during both creation and deletion phases, significantly reducing processing time and improving overall efficiency.
+- **Rate Limiting Management**: Handles delays to avoid hitting API rate limits.
+- **Retry Logic**: Implements retry mechanisms for handling rate limit errors (HTTP 429).
 - **Logging**: Provides logs for progress tracking, including creation and deletion of entities.
 
 ## Prerequisites
@@ -28,7 +30,6 @@ Ensure you have the following before running the project:
 ## Installation
 
 ### Clone the Repository
-
 
 ```bash
 git clone https://github.com/Cryptolyfe/Megaverse_Grid_Manager.git
@@ -63,33 +64,36 @@ Run the script:
 node index.js
 ```
 ### Expected Output:
-    _Starting the process to build the goal map.
-    Deleted POLYanet at (0, 0)
-    ...
-    POLYanet created at (5, 10)
-    Attempting to create SOLoon (red) at (6, 12)
-    ...
-    Goal map has been successfully created.
-    Process completed successfully.
+Starting the process to build the goal map.
+Clearing the grid...
+Skipping entire row 0 during clearing, as it contains only 'SPACE'
+Deleted COMETHS at (1, 7)
+Deleted POLYANETS at (2, 2)
+Deleted POLYANETS at (2, 3)
+Deleted COMETHS at (2, 13)
+Deleted POLYANETS at (2, 23)
+...
+Goal map has been successfully created.
+Process completed successfully.
 
 
 ## The script does the following:
- Clears the grid of all existing entities by deleting POLYanets, SOLoons, and comETHs.
- Introduces a delay to prevent hitting API rate limits.
- Populates the grid with new entities from the goal map retrieved from the API.
+Clears the grid of all existing entities by deleting POLYanets, SOLoons, and comETHs.
+Introduces a delay to prevent hitting API rate limits.
+Implements retry logic for rate-limiting (HTTP 429) errors.
+Populates the grid with new entities from the goal map retrieved from the API.
 
 ## Future Improvements:
 ### Although the current script works as intended, there are a few areas that can be optimized:
 
 1. Separation of Concerns (Modularization)
-Improvement: Separate the functionality into dedicated scripts:
+Improvement: Separate the functionality into dedicated scripts: 
+index
+utils
 clear.js: Dedicated to clearing the grid.
 create.js: Dedicated to creating the entities.
 Why: Modular scripts will improve maintainability and allow for more flexible testing and troubleshooting.
-2. Optimize the Deletion Process
-Improvement: The script currently tries to delete entities at every grid position, including empty spots marked as "SPACE". We could skip positions that are already "SPACE" to reduce unnecessary API calls.
-3. Refactor certian entities to Classes: While the current function-based approach works well for this project, refactoring the code to use classes can provide better encapsulation, reusability, and maintainability if the project grows or becomes more complex. By creating separate classes for entities like Polyanet, Soloon, and Cometh, the code could be more organized and modular, allowing for easier modifications or extensions of individual components without affecting others.
-4. Optimize the Rate Limiting Delay
+
+2. Optimize the Rate Limiting Delay
 Improvement: Experiment with shorter delays between API calls (currently set at 500ms for deletions and 1000ms for creations) to find the optimal balance between speed and avoiding rate limits.
-5. Error Handling and Retry Mechanism
-Improvement: Enhance error handling by implementing a retry mechanism when the script encounters rate limits or other transient API errors.
+
