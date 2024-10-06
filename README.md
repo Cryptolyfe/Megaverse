@@ -84,10 +84,10 @@ Process completed successfully.
 
 1. Separation of Concerns (Modularization)
 Improvement: Separate the functionality into dedicated scripts: 
-index.js
-utils.js
-clear.js: Dedicated to clearing the grid.
-create.js: Dedicated to creating the entities.
+index.js<br>
+utils.js<br>
+clear.js: Dedicated to clearing the grid.<br>
+create.js: Dedicated to creating the entities.<br>
 Why: Modular scripts will improve maintainability and allow for more flexible testing and troubleshooting.
 
 2. Optimize the Rate Limiting Delay
