@@ -79,10 +79,10 @@ Process completed successfully.
 ```
 
 ## The script does the following:
-Clears the grid of all existing entities by deleting POLYanets, SOLoons, and comETHs.
-Introduces a delay to prevent hitting API rate limits.
-Implements retry logic for rate-limiting (HTTP 429) errors.
-Populates the grid with new entities from the goal map retrieved from the API.
+-Clears the grid of all existing entities by deleting POLYanets, SOLoons, and comETHs.
+-Introduces a delay to prevent hitting API rate limits.
+-Implements retry logic for rate-limiting (HTTP 429) errors.
+-Populates the grid with new entities from the goal map retrieved from the API.
 
 ## Future Improvements:
 ### Although the current script works as intended, there are a few areas that can be optimized:
