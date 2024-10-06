@@ -25,7 +25,7 @@ Megaverse Grid Manager is a Node.js project that automates interactions with the
 Ensure you have the following before running the project:
 - **Node.js** installed ([Node.js Official Site](https://nodejs.org))
 - **npm** installed (comes with Node.js)
-- **Crossmint API Candidate ID**
+- **Candidate ID**
 
 ## Installation
 
