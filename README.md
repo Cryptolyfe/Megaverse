@@ -74,7 +74,8 @@ Deleted POLYANETS at (2, 3)
 Deleted COMETHS at (2, 13)
 Deleted POLYANETS at (2, 23)
 ...
-Goal map has been successfully created.
+Skipping entire row 29 as it contains only 'SPACE'
+Goal map created successfully.
 Process completed successfully.
 ```
 
