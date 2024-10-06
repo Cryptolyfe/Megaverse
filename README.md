@@ -64,6 +64,7 @@ Run the script:
 node index.js
 ```
 ### Expected Output:
+```
 Starting the process to build the goal map.
 Clearing the grid...
 Skipping entire row 0 during clearing, as it contains only 'SPACE'
@@ -75,7 +76,7 @@ Deleted POLYANETS at (2, 23)
 ...
 Goal map has been successfully created.
 Process completed successfully.
-
+```
 
 ## The script does the following:
 Clears the grid of all existing entities by deleting POLYanets, SOLoons, and comETHs.
