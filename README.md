@@ -75,6 +75,10 @@ Process completed successfully.
 -Implements retry logic for rate-limiting (HTTP 429) errors.<br>
 -Populates the grid with new entities from the goal map retrieved from the API.<br>
 
+![Example Grid](./images/map.png)
+
+
+
 ## Future Improvements:
 ### Although the current script works as intended, there are a few areas that can be optimized:
 
