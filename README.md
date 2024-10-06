@@ -1,15 +1,5 @@
 # Megaverse Grid Manager
 
-## Table of Contents
-- [Overview](#overview)
-- [Features](#features)
-- [Prerequisites](#prerequisites)
-- [Installation](#installation)
-- [Configuration](#configuration)
-- [Usage](#usage)
-- [Future Improvements](#future-improvements)
-- [Repository Structure](#repository-structure)
-
 ## Overview
 Megaverse Grid Manager is a Node.js project that automates interactions with the Crossmint API to manage entities within a grid-based system. It clears existing grid entities like **POLYanets**, **SOLoons**, and **comETHs**, and creates new ones based on a predefined goal map retrieved from the API.
 
@@ -90,8 +80,8 @@ Process completed successfully.
 
 1. Separation of Concerns (Modularization)
 Improvement: Separate the functionality into dedicated scripts: 
-index
-utils
+index.js
+utils.js
 clear.js: Dedicated to clearing the grid.
 create.js: Dedicated to creating the entities.
 Why: Modular scripts will improve maintainability and allow for more flexible testing and troubleshooting.
