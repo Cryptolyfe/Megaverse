@@ -88,7 +88,6 @@ Improvement: Separate the functionality into dedicated scripts:
 -utils.js<br>
 -clear.js: Dedicated to clearing the grid.<br>
 -create.js: Dedicated to creating the entities.<br>
-
 Why: Modular scripts will improve maintainability and allow for more flexible testing and troubleshooting.
 
 
